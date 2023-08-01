@@ -4,7 +4,7 @@ interface CopyIconProps extends SVGProps<SVGSVGElement> {
   title?: string
 }
 
-export const MenuIcon = ({ title, ...props }: CopyIconProps) => {
+export const MenuCloseIcon = ({ title, ...props }: CopyIconProps) => {
   return (
     <svg
       {...props}
