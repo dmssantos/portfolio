@@ -25,10 +25,27 @@ export const Menu = ({ isVisible, onClose }: MenuProps) => {
             <MenuCloseIcon className="fill-white w-10 h-10" />
           </button>
         </div>
-        <nav className="flex flex-col gap-5 text-xl p-5 items-centers">
-          <Link href="/">Sobre mim</Link>
-          {/* <Link href="/portfolio">Portfolio</Link> */}
-          <Link href="/contatos">Entre em contato</Link>
+        <nav className="flex flex-col gap-5 text-xl p-5 items-center">
+          <Link
+            href="/"
+            onClick={onClose}
+          >
+            Sobre mim
+          </Link>
+
+          {/* <Link
+            href="/portfolio"
+            onClick={onClose}
+          >
+            Portfolio
+          </Link> */}
+
+          <Link
+            href="/contatos"
+            onClick={onClose}
+          >
+            Entre em contato
+          </Link>
         </nav>
       </div>
     </div>
